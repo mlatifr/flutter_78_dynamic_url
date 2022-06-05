@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
         GetPage(name: '/', page: () => HomePage()),
         GetPage(name: '/product', page: () => ProductPage()),
         //using parameter :id untuk ngirim arguments dalam bentuk mapping
-        GetPage(name: '/product/:id/:name', page: () => DetailPage()),
+        GetPage(name: '/product/:id?', page: () => DetailPage()),
       ],
     );
   }

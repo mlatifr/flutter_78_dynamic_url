@@ -15,7 +15,7 @@ class ProductPage extends StatelessWidget {
             //mengirim data ke page yg menerima arguments
             ElevatedButton(
                 onPressed: () => Get.toNamed(
-                      '/product/1/Jacket',
+                      '/product/1?name=Jacket',
                     ),
                 child: Text('Products 1')),
             SizedBox(
@@ -24,7 +24,7 @@ class ProductPage extends StatelessWidget {
             //mengirim data ke page yg menerima arguments
             ElevatedButton(
                 onPressed: () => Get.toNamed(
-                      '/product/2/Shoe',
+                      '/product/2?name=Kaos Kaki Paling Mahal',
                     ),
                 child: Text('Products 2')),
             SizedBox(
@@ -33,7 +33,7 @@ class ProductPage extends StatelessWidget {
             //mengirim data ke page yg menerima arguments
             ElevatedButton(
                 onPressed: () => Get.toNamed(
-                      '/product/3/Sandals',
+                      '/product/3?name=New Sandals',
                     ),
                 child: Text('Products 3')),
           ],
