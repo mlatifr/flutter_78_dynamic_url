@@ -13,7 +13,8 @@ class DetailPage extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Text("Product Name ${Get.parameters['name']}")
+            Text("Product Name ${Get.parameters['name']}"
+                "\nSize:  ${Get.parameters['size']}")
           ], //mengambil data dari page yg mengirim arguments
         ),
       ),
