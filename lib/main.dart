@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_78_dynamic_url/pages/home_page.dart';
+import 'package:flutter_78_dynamic_url/pages/detail.dart';
+import 'package:flutter_78_dynamic_url/pages/home.dart';
+import 'package:flutter_78_dynamic_url/pages/product.dart';
 import 'package:get/get.dart';
 
 void main() {
@@ -7,12 +9,15 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({Key key}) : super(key: key);
-
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
       home: HomePage(),
+      getPages: [
+        GetPage(name: '/', page: () => HomePage()),
+        GetPage(name: '/product', page: () => ProductPage()),
+        GetPage(name: '/product-detail', page: () => DetailPage()),
+      ],
     );
   }
 }
