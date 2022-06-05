@@ -13,19 +13,19 @@ class ProductPage extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             ElevatedButton(
-                onPressed: () => Get.toNamed('/product-detail', arguments: 1),
+                onPressed: () => Get.toNamed('/product-detail', arguments: 1),//mengirim data ke page yg menerima arguments
                 child: Text('Products 1')),
             SizedBox(
               height: 10,
             ),
             ElevatedButton(
-                onPressed: () => Get.toNamed('/product-detail', arguments: 2),
+                onPressed: () => Get.toNamed('/product-detail', arguments: 2),//mengirim data ke page yg menerima arguments
                 child: Text('Products 2')),
             SizedBox(
               height: 10,
             ),
             ElevatedButton(
-                onPressed: () => Get.toNamed('/product-detail', arguments: 3),
+                onPressed: () => Get.toNamed('/product-detail', arguments: 3),//mengirim data ke page yg menerima arguments
                 child: Text('Products 3')),
           ],
         ),
