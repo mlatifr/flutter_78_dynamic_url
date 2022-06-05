@@ -7,13 +7,13 @@ class DetailPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text(
-            'Product ${Get.parameters}'), //mengambil data dari page yg mengirim arguments
+            'Product Id ${Get.parameters['id']}'), //mengambil data dari page yg mengirim arguments
       ),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Text('Product id ${Get.parameters}')
+            Text("Product Name ${Get.parameters['name']}")
           ], //mengambil data dari page yg mengirim arguments
         ),
       ),
