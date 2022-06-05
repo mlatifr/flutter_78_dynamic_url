@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_78_dynamic_url/routes/route_name.dart';
 import 'package:get/get.dart';
 
 class ProductPage extends StatelessWidget {
@@ -15,7 +16,7 @@ class ProductPage extends StatelessWidget {
             //mengirim data ke page yg menerima arguments
             ElevatedButton(
                 onPressed: () => Get.toNamed(
-                      '/product/1?name=Jacket&size=36',
+                      RouteName.product + '/1?name=Jacket&size=36',
                     ),
                 child: Text('Products 1')),
             SizedBox(
@@ -24,7 +25,8 @@ class ProductPage extends StatelessWidget {
             //mengirim data ke page yg menerima arguments
             ElevatedButton(
                 onPressed: () => Get.toNamed(
-                      '/product/2?name=Kaos Kaki Paling Mahal&size=36',
+                      RouteName.product +
+                          '/2?name=Kaos Kaki Paling Mahal&size=36',
                     ),
                 child: Text('Products 2')),
             SizedBox(
@@ -33,7 +35,7 @@ class ProductPage extends StatelessWidget {
             //mengirim data ke page yg menerima arguments
             ElevatedButton(
                 onPressed: () => Get.toNamed(
-                      '/product/3?name=New Sandals&size=36',
+                      RouteName.product + '/3?name=New Sandals&size=36',
                     ),
                 child: Text('Products 3')),
           ],
